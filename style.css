@@ -1,3 +1,7 @@
+:root{
+    --towerHt:500px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +17,29 @@
 }
 .tower{
     position: relative;
-    height: 500px;
+    height: var(--towerHt);
     width: 100px;
     transform:translateX(10px);
+    background: #5b5d5e;
+
+}
+.tower::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -23px;
+    width: 55px;
+    height: var(--towerHt);
+    transform: skewX(-5deg);
+    background: #5b5d5e;
+}
+.tower::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -23px;
+    width: 55px;
+    height: var(--towerHt);
+    transform: skewX(5deg);
     background: #5b5d5e;
 }
