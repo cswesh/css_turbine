@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 } 
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #82c5ec;
+}
+.tower{
+    position: relative;
+    height: 500px;
+    width: 100px;
+    transform:translateX(10px);
+    background: #5b5d5e;
+}
